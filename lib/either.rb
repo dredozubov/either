@@ -1,6 +1,6 @@
 # Do not instantiate this class EVER
 class Either
-  attr_accessor :value
+  attr_reader :value
 
   def initialize(value)
     @value = value

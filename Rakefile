@@ -2,16 +2,16 @@ $LOAD_PATH << File.expand_path('./lib')
 require "either"
 
 task :build do
-  system "gem build either.gemspec"
+  system "gem build either-monad.gemspec"
 end
 
 task :release => :build do
-  system "gem push either-#{Either::VERSION}"
+  system "gem push either-monad-#{Either::VERSION}"
 end
 
 task :console do
   require 'pry'
-  require 'either'
+  require 'either-monad'
   ARGV.clear
   Pry.start
 end

@@ -2,12 +2,12 @@ $LOAD_PATH.unshift File.join(File.dirname(__FILE__), 'lib')
 require "either/version"
 
 Gem::Specification.new do |s|
-  s.name              = "either"
+  s.name              = "either-monad"
   s.licenses          = ['MIT']
   s.version           = Either::VERSION
   s.date              = Time.now.strftime('%Y-%m-%d')
   s.summary           = "Dead simple error context framework aka Either monad."
-  s.homepage          = "http://github.com/dredozubov/either"
+  s.homepage          = "http://github.com/dredozubov/either-monad"
   s.email             = "denis.redozubov@gmail.com"
   s.authors           = [ "Denis Redozubov" ]
   s.has_rdoc          = false

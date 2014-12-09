@@ -8,8 +8,8 @@ Dead simple error context framework aka Either monad. Goal of this gem is to
 provide solid ground to control flow without exceptions and allow simple and
 expressive chaining and handling failures gracefully.
 
-Don't fear the name though, you don't have to know what monad is to understand
-how his gem work and use it with ease!
+Don't fear the "monad" part of the name though, you don't have to know what monad is to understand
+how his gem works and use it with ease!
 
 Installation
 ------------

@@ -4,6 +4,7 @@ Either
 Dead simple error context framework aka Either monad. Goal of this gem is to
 provide solid ground to control flow without exceptions and allow simple and
 expressive chaining and handling failures gracefully.
+
 Don't fear the name though, you don't have to know what monad is to understand
 how his gem work and use it with ease!
 
@@ -34,7 +35,7 @@ You can chain computations without fear of losing a failure context. For
 example you can validate a request, make some work and serialize the result
 with:
 
-```
+```ruby
 # results in either Success with serialized result or Failure with context.
 validate(request)
   .bind(->(validated) { search(validated) })
@@ -50,13 +51,13 @@ or `Failure`.
 
 ### Wrapping values into Success or Failure context
 
-```
+```ruby
 Success[value]
 ```
 
 or
 
-```
+```ruby
 Failure[failure_context]
 ```
 
@@ -64,7 +65,7 @@ Failure[failure_context]
 
 It's just an attribute reader!
 
-```
+```ruby
 result = Success[:foo]
 result.value # => :foo
 ```
@@ -84,3 +85,9 @@ Contributing
 * fork it
 * make some changes and submit a pull request
 * do not make changes to version
+
+Contact info
+------------
+
+If you want to contact me or/and some questions - feel free to write me at
+denis.redozubov at gmail or mention me on [twitter](http://twitter.com/rufuse).

@@ -78,6 +78,7 @@ Gem is supposed to work correctly with the following rubies:
 * 2.0.0
 * 2.1.4
 * jruby
+* rbx
 
 Contributing
 -------------

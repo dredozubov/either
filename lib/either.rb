@@ -46,3 +46,5 @@ end
 class Success < Either
   define_method :success?, -> { true }
 end
+
+require 'either/version'

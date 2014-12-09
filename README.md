@@ -1,6 +1,9 @@
 Either
 ======
 
+[![Build Status](https://travis-ci.org/dredozubov/either.svg?branch=master)](https://travis-ci.org/dredozubov/either)
+[![Code Climate](https://codeclimate.com/github/dredozubov/either/badges/gpa.svg)](https://codeclimate.com/github/dredozubov/either)
+
 Dead simple error context framework aka Either monad. Goal of this gem is to
 provide solid ground to control flow without exceptions and allow simple and
 expressive chaining and handling failures gracefully.

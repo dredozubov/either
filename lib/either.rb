@@ -34,7 +34,9 @@ class Either
   # https://hackage.haskell.org/package/base-4.2.0.1/docs/src/Data-Either.html#either
   #
   # Hopefully keyword arguments will improve readability
-  def either(failure:, success:)
+  def either(opts = {})
+    failure = opts.fetch(:failure)
+    success = opts.fetch(:success)
     failure? ? failure.call(value) : success.call(value)
   end
 end
